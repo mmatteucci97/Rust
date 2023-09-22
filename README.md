@@ -1,2 +1,4 @@
 # Rust
-Repository pubblico in cui vengono mostrati esercizi e prove di algoritmi utilizzando Rust come linguaggio di programmazione. All'interno delle varie directory sono presenti file in formato Markdown per note e appunti
+Public repository on witch you can find various source code and algorithms to learn the Rust programming lanaugage and the libraries.
+
+Inside the various directories you can find a README and other Markdown files on witch all the functions and the concepts are explained

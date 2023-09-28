@@ -57,3 +57,50 @@ Per acquisire gli strumenti di compilazione, dovrai installare Visual Studio 202
 - il carico di lavoro "Sviluppo desktop con C ++"
 - l'SDK di Windows 10 o 11 (10.0.19041.0 o successivo)
 - il pacchetto lingua inglese per Visual Studio, insieme a qualsiasi altra lingua che desideri utilizzare.
+
+### Risoluzione dei problemi
+
+Per verificare se Rust è installato correttamente, esegui il seguente comando:
+```
+$ rustc --version
+```
+Dovresti vedere il numero di versione, l'hash del commit e la data del commit per l'ultima versione stabile di Rust, nel seguente formato:
+```
+rustc x.y.z (abcabcabc yyyy-mm-dd)
+```
+Se vedi questo output, hai installato Rust con successo e sei pronto per passare al passaggio successivo. Se non è così, controlla che Rust sia nella tua variabile PATH. Se stai usando Linux o macOS, esegui il seguente comando:
+```
+$ echo $PATH
+```
+In PowerShell su Windows, esegui il seguente comando:
+```
+$ echo $env:PATH
+```
+In Windows Command Prompt, esegui il seguente comando:
+```
+$ echo %PATH%
+```
+Se tutto è corretto e non vedi ancora l'output sopra, ci sono diversi posti in cui puoi ottenere aiuto.
+
+### Aggiornamento e disinstallazione
+
+Se hai già Rust installato, puoi aggiornarlo eseguendo il seguente comando:
+```
+$ rustup update
+```
+Per disinstallare Rust, esegui il seguente comando:
+```
+$ rustup self uninstall
+```
+
+### Documentazione locale
+
+L'installazione di Rust include anche la documentazione locale. Puoi leggere la documentazione locale eseguendo il seguente comando:
+```
+$ rustup doc
+```
+In qualsiasi momento un tipo di funzione è fornito dalla libreria standard, e non sei sicuro di cosa fa o come funziona, puoi usare questo comando per leggere la documentazione localmente.
+Ad esempio, se vuoi sapere cosa fa la parola chiave _let_, puoi eseguire il seguente comando:
+```
+$ rustup doc let
+```

@@ -53,4 +53,48 @@ If you are using Windows, from [here](https://www.rust-lang.org/tools/install) y
 To acquire the build tools, you'll need to install Visual Studio 2022 Community. You can download it from [here](https://visualstudio.microsoft.com/downloads/). When asked which workloads to install, make sure to select
 - the "Desktop development with C++" workload
 - the Windows 10 or 11 SDK (10.0.19041.0 or later)
-- the English language pack for Visual Studio, along with any other languages you'd like to use
+- the English language pack for Visual Studio, along with any other languages you'd like to use.
+
+### Troubleshooting
+To check whether Rust is installed correctly, run the following command:
+```
+$ rustc --version
+```
+You should see the version number, commit hash, and commit date for the latest stable version of Rust, in the following format:
+```
+rustc x.y.z (abcabcabc yyyy-mm-dd)
+```
+If you see this output, you've installed Rust successfully and are ready to move on. If not, check that Rust is in your PATH variable. If you're using Linux or macOS, run the following command:
+```
+$ echo $PATH
+```
+In PowerShell on Windows, run the following command:
+```
+$ echo $env:PATH
+```
+In Windows Command Prompt, run the following command:
+```
+$ echo %PATH%
+```
+If that's all correct and you still don't see the output above, thare are a number of places you can get help.
+
+### Updating and Uninstalling
+If you already have Rust installed, you can update it by running the following command:
+```
+$ rustup update
+```
+To uninstall Rust, run the following command:
+```
+$ rustup self uninstall
+```
+
+### Local Documentation
+The installation of Rust also includes a local copy of the documentation so that you can read it offline. To open the documentation in your browser, run the following command:
+```
+$ rustup doc
+```
+Any time a type of function is provided by the standard library, and you are not sure what it does or how it works, you can use this command to read the documentation locally.  
+For example, if you want to know what the _let_ keyword does, you can run the following command:
+```
+$ rustup doc let
+```

@@ -102,3 +102,21 @@ error: expected `;`, found `}`
     remove the semicolon.
 ```
 
+## Compiling and Running
+
+You've just run a newly created program, so let's examine each step in the process.  
+Before running a Rust program, you must compile it using the `rustc` command and passing it the name of your source file, like this:
+
+```bash
+$ rustc main.rs
+```
+
+If you have a background with C or C++, you'll notice that this is similar to how you would compile a C program with `gcc` or `clang`. After compiling succesfully, you'll have an executable file that you can run. 
+
+On Linux, macOS and PowerShell on Windows you can see the executable file by entering `ls` at the command line:
+
+```bash
+$ ls
+```
+ On Linux and macOS, you'll see a file named `main` and the source file `main.rs`.  
+ On Windows, you'll see three files: `main.exe`, `main.pdb` and `main.rs`. The `.exe` file is the executable, and the `.pdb` file contains debugging information. You can ignore the `.pdb` file for now.
